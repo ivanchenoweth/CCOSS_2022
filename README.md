@@ -1,3 +1,5 @@
+sudo docker pull toton95/ccoss_px4_rox:latest
+
 `mkdir px4_ccoss_workshop
 
 `cd px4_ccoss_workshop
