@@ -1,12 +1,18 @@
-mkdir px4_ccoss_workshop
-cd px4_ccoss_workshop
-git clone https://github.com/TOTON95/CCOSS_2022.git
-git clone https://github.com/PX4/PX4-Autopilot.git
-cd PX4-Autopilot
-git submodule update --recursive --init
-cd ..
+`mkdir px4_ccoss_workshop
 
-sudo docker run -it -rm \
+`cd px4_ccoss_workshop
+
+`git clone https://github.com/TOTON95/CCOSS_2022.git
+
+`git clone https://github.com/PX4/PX4-Autopilot.git
+
+`cd PX4-Autopilot
+
+`git submodule update --recursive --init
+
+`cd ..
+
+`sudo docker run -it -rm \
   -v /tmp/.x-unix:/tmp.X-unix:ro \
   -v /dev/dri:/dev/dri \
   -e DISPLAY=:$DISPLAY \
