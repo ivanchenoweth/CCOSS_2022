@@ -14,7 +14,7 @@ sudo docker pull toton95/ccoss_px4_rox:latest
 
 `cd ..
 
-`sudo docker run -it -rm \
+`sudo docker run -it --rm \
   -v /tmp/.x-unix:/tmp.X-unix:ro \
   -v /dev/dri:/dev/dri \
   -e DISPLAY=:$DISPLAY \
@@ -22,3 +22,8 @@ sudo docker pull toton95/ccoss_px4_rox:latest
   -v $(pwd)/PX4-Autopilot:/home/user/workspace/PX4-Autopilot \
   -e LOCAL_USER_ID="$(id -u)" \
   toton95/ccoss_px4_ros:latest
+  
+
+    user@idcontainer:~workspace/PX4-Autopilot$make px4_sitl_default gazebo
+
+    https://www.youtube.com/watch?v=OzKn8oQOH6A&ab_channel=SoftwareGuru
